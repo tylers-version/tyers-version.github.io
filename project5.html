@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tyler McGuyer - About Me</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Turtle Project 5 Scene</h1>
+    </header>
+
+    <!-- Project Description -->
+    <section>
+        <h2>About the Project</h2>
+        <hr>
+        <p>This project was all about refactoring code into functions to make the code cleaner.
+            I used refactoring to make a function called draw_house that used functions like jump_to, draw_rectangle, draw_triangle, and draw_square to draw different parts of the house.
+</p>
+    </section>
+
+    <!-- Code highlights -->
+    <section>
+        <h2>Sample Code: draw_house</h2>
+        <hr>
+        <p>
+            This function creates a red house with a roof and blue window. The parameters allow for flexible positioning and scaling:
+            <br><br>
+            • <strong>t</strong>: The turtle graphics object for drawing<br>
+            • <strong>x, y</strong>: Starting position coordinates<br>
+            • <strong>s</strong>: Side length of objects<br>
+            • <strong>l</strong>: Length of a rectangle<br>
+            • <strong>c</strong>: Color of the objects<br>
+        </p>
+        
+        <div class="code-container">
+            <code><span class="keyword">def</span> <span class="function">draw_house</span>(<span class="parameter">t</span>, <span class="parameter">x1</span>, <span class="parameter">x2</span>, <span class="parameter">x3</span>, <span class="parameter">y1</span>, <span class="parameter">y2</span>, <span class="parameter">3</span>, <span class="parameter">s1</span>, <span class="parameter">s2</span>, <span class="parameter">s3</span>, <span class="parameter">l1</span>, <span class="parameter">c1</span>, <span class="parameter">c2</span>, <span class="parameter">c3</span>):
+            <span class="comment">"""code that can draw a house/cabin of any size, color, and position"""</span>
+            <span class="function">jump_to</span>(<span class="parameter">t</span>, <span class="parameter">x1</span>, <span class="parameter">y1</span>)
+            <span class="function">draw_rectangle</span>(<span class="parameter">t</span>, <span class="parameter">s1</span>, <span class="parameter">l1</span>, <span class="parameter">c1</span>)
+            <span class="function">jump_to</span>(<span class="parameter">t</span>, <span class="parameter">x2</span>, <span class="parameter">y2</span>)
+            <span class="function">draw_triangle</span>(<span class="parameter">t</span>, <span class="parameter">s2</span>, <span class="parameter">c2</span>)
+            <span class="function">jump_to</span>(<span class="parameter">t</span>, <span class="parameter">x3</span>, <span class="parameter">y3</span>)
+            <span class="function">draw_square</span>(<span class="parameter">t</span>, <span class="parameter">s3</span>, <span class="parameter">c3</span>)
+            </code>
+        </div>
+    </section>    
+    <!-- the scene -->
+    <section>
+        <h2>Final Turtle Scene</h2>
+        <hr>
+        <p>Here's the completed turtle graphics scene featuring a house with two trees and a half sun:</p>
+        <div class="house-img">
+            <img src="code_img.png" alt="Turtle Graphics Scene - A house with red roof, colorful flowers, clouds, sun, and pine tree on a blue sky background" class="scene-image">
+        </div>
+        
+        <p>
+            The scene uses a couple of different functions to create the overall scene.
+        </p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Tyler McGuyer | Used code from Aye Thuzar for reference</p>
+    </footer>
+</body>
+</html>
